@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Room - Simple Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>Global Chat</h1>
+      <button id="logout-btn" class="btn">Logout</button>
+    </header>
+    <main class="chat-messages" id="chat-messages">
+      <!-- Messages will appear here -->
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input id="msg" type="text" placeholder="Type a message..." required>
+        <button class="btn">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- instead of a relative /socket.io/socket.io.js on 5501 -->
+<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+
+</body>
+</html>
